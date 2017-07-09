@@ -1,0 +1,103 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1287218325157856}
+  m_IsPrefabParent: 1
+--- !u!1 &1287218325157856
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4684326075316838}
+  - component: {fileID: 114245664292820664}
+  - component: {fileID: 114783045321891464}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4684326075316838
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1287218325157856}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114245664292820664
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1287218325157856}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b78cc4125d8ee94eaf977e49fcdea1c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  boardScript: {fileID: 0}
+--- !u!114 &114783045321891464
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1287218325157856}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13f1d593aaf8f514f884c1ac338c2298, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  columns: 8
+  rows: 8
+  wallCount:
+    minimum: 5
+    maximum: 9
+  foodCount:
+    minimum: 1
+    maximum: 5
+  exit: {fileID: 1308835942256056, guid: 3d655a78a7e68034fa8f296fc82a5f4d, type: 2}
+  floorTiles:
+  - {fileID: 1499598046855226, guid: b92794b5c18ef474599180723382022b, type: 2}
+  - {fileID: 1459263992110590, guid: 31883ebb1ab73664791a7ed9cda54b54, type: 2}
+  - {fileID: 1219473897708418, guid: 04c9c64fba9ffc647aebe2336d1f913a, type: 2}
+  - {fileID: 1101390473311808, guid: 0ae85718996bac6458233ab3a9129503, type: 2}
+  - {fileID: 1258205283448032, guid: 45951d524300be44bb52eb67b5e5e47e, type: 2}
+  - {fileID: 1945355532977944, guid: f03c515c79509ea4fbf8fc50f7f51609, type: 2}
+  - {fileID: 1234551255871446, guid: efdf004b0ee39534383d435eda30e4dd, type: 2}
+  - {fileID: 1499929588341660, guid: 8bb8ba897a7bfd84ab1475d8f069f959, type: 2}
+  wallTiles:
+  - {fileID: 1003501262690536, guid: c66b30a575ac1d24e9cd6b4400a1f871, type: 2}
+  - {fileID: 1691833915942508, guid: c5c6e40effff34f4b8eb5551a1b92a10, type: 2}
+  - {fileID: 1609517345479392, guid: d3c8c16c037c46b45906f7aa3f25560a, type: 2}
+  - {fileID: 1749437676359280, guid: 5616d9af857e7c14697afde7302aff96, type: 2}
+  - {fileID: 1604445549262570, guid: 5e235cec663edae4e9a85dd17f55113f, type: 2}
+  - {fileID: 1107714037634296, guid: 7a43c149808548b4387ff6376806daea, type: 2}
+  - {fileID: 1024202835760266, guid: 172b3565955b0274ab7a412e62c2bd4e, type: 2}
+  - {fileID: 1443123629296754, guid: 85a288128bbbfb145944390bfa5d385d, type: 2}
+  foodTiles:
+  - {fileID: 1578347773728300, guid: 423744c47f9938948812663426fcaa2a, type: 2}
+  - {fileID: 1818375751494944, guid: 45a0029b746124442b1e41f2f2299af3, type: 2}
+  enemyTiles:
+  - {fileID: 1149491841479120, guid: 54fa8e1f52f38e04e87f16a67f443cb8, type: 2}
+  - {fileID: 1196336574421778, guid: a598d9ededb2fe443965d57dd1207074, type: 2}
+  outerWallTiles:
+  - {fileID: 1096872744939718, guid: 1dcfe98164219a44792825609c34be1c, type: 2}
+  - {fileID: 1146552497371384, guid: 1e3ba2786571c6b4088a8f4bf3b1d3f0, type: 2}
+  - {fileID: 1651240373161912, guid: df4f41b3fab5d5f4b95902a9c2f8836e, type: 2}
