@@ -1,14 +1,18 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+using System.Collections;
 
-public class Loader : MonoBehaviour {
 
-    public GameObject gameManager;
+public class Loader : MonoBehaviour 
+{
+	public GameObject gameManager;          //GameManager prefab to instantiate.
 
-	// Use this for initialization
-	void Awake () {
-        if (GameManager.instance == null)
-            Instantiate(gameManager);
+
+	void Awake ()
+	{
+		//Check if a GameManager has already been assigned to static variable GameManager.instance or if it's still null
+		if (GameManager.instance == null)
+
+			//Instantiate gameManager prefab
+			Instantiate (gameManager);
 	}
 }
